@@ -5,8 +5,8 @@
         <param name="~steps_per_meter" value="51019.95943"/>
         <param name="~base_width" value="0.294935"/>
         <param name="~swap_motors" value="false"/>
-        <param name="~invert_motor_1" value="false"/>
-        <param name="~invert_motor_2" value="true"/>
+        <param name="~invert_motor_1" value="true"/>
+        <param name="~invert_motor_2" value="false"/>
         <param name="~var_pos_x" value="0.01"/>
         <param name="~var_pos_y" value="0.01"/>
         <param name="~var_theta_z" value="0.01"/>
