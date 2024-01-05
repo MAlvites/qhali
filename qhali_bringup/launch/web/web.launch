@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <launch>
 	<node name="webserver" pkg="teleoperacion_ip" type="webserver.js" output="screen" />
 	<node name="action_handler" pkg="teleoperacion_ip" type="action_handler.py" output="screen" />

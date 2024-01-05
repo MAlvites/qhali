@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    <!--Actuadores-->
+    <include file="$(find qhali_bringup)/launch/actuators/roboclaw.launch"/>
+	<!--Servidor Web-->
+	<include file="$(find qhali_bringup)/launch/web/web.launch"/>
+</launch>

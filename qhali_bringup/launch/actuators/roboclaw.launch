@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="roboclaw" type="diffdrive_node" name="diffdrive" output="screen">
+        <param name="~roboclaws" value="1"/>
+        <param name="~steps_per_meter" value="51019.95943"/>
+        <param name="~base_width" value="0.294935"/>
+        <param name="~swap_motors" value="false"/>
+        <param name="~invert_motor_1" value="false"/>
+        <param name="~invert_motor_2" value="true"/>
+        <param name="~var_pos_x" value="0.01"/>
+        <param name="~var_pos_y" value="0.01"/>
+        <param name="~var_theta_z" value="0.01"/>
+    </node>
+    <!-- Roboclaw 0x80 Index: 0 -->
+    <node pkg="roboclaw" type="roboclaw_node" name="roboclaw" output="screen">
+        <param name="~serial_port" value="/dev/ttyACM0"/>
+        <param name="~baudrate" value="115200"/>
+        <!--<param name="~roboclaws" value="1"/>-->
+    </node>
+</launch>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+    <!--Actuadores-->
+    <include file="$(find qhali_bringup)/launch/actuators/roboclaw.launch"/>
+    <!--Sensores-->
+    <include file="$(find qhali_bringup)/launch/sensors/depth_camera.launch"/>
+    <include file="$(find qhali_bringup)/launch/sensors/rp_lidar.launch"/>
+    <!--<include file="$(find qhali_bringup)/launch/sensors/ultrasonars_serial.launch"/>-->
+	<!--Servidor Web-->
+	<include file="$(find qhali_bringup)/launch/web/web.launch"/>
+</launch>
