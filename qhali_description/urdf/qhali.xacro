@@ -3,7 +3,11 @@
 
 <xacro:include filename="$(find qhali_description)/urdf/materials.xacro" />
 <xacro:include filename="$(find qhali_description)/urdf/qhali.trans" />
-<xacro:include filename="$(find qhali_description)/urdf/qhali.gazebo" />
+
+<xacro:include filename="$(find qhali_description)/gazebo/qhali_materials.gazebo" />
+<xacro:include filename="$(find qhali_description)/gazebo/qhali_physics.gazebo" />
+<xacro:include filename="$(find qhali_description)/gazebo/qhali_plugins.gazebo" />
+
 <link name="base_link">
   <inertial>
     <origin xyz="1.1640405477725307e-13 1.3216014094480577e-13 -0.010282985381198704" rpy="0 0 0"/>
@@ -1033,6 +1037,29 @@
   </collision>
 </link>
 
+
+<link name="rplidar">
+  <inertial>
+    <origin xyz="0.0 0.0 0.0205" rpy="0 0 0"/>
+    <mass value="0.19"/>
+    <inertia ixx="1e-5" iyy="1e-5" izz="1e-5" ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.0 0.0205" rpy="0 0 0"/>
+    <geometry>
+      <cylinder length="0.041" radius="0.038"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.0 0.0205" rpy="0 0 0"/>
+    <geometry>
+      <cylinder length="0.041" radius="0.038"/>
+    </geometry>
+  </collision>
+</link>
+
+
 <joint name="right_motor_joint" type="fixed">
   <origin xyz="0.0 -0.192825 -0.09" rpy="0 0 0"/>
   <parent link="base_link"/>
@@ -1049,7 +1076,7 @@
   <origin xyz="0.0 -0.045357 0.015" rpy="0 0 0"/>
   <parent link="left_motor_link_1"/>
   <child link="left_wheel_link_1"/>
-  <axis xyz="-0.0 -1.0 -0.0"/>
+  <axis xyz="0.0 1.0 0.0"/>
 </joint>
 
 <joint name="front_right_caster_joint" type="fixed">
@@ -1080,7 +1107,7 @@
   <origin xyz="3e-06 0.071975 0.014999" rpy="0 0 0"/>
   <parent link="right_motor_link_1"/>
   <child link="right_wheel_link_1"/>
-  <axis xyz="0.0 -1.0 -0.0"/>
+  <axis xyz="0.0 1.0 0.0"/>
 </joint>
 
 <joint name="columns_joint" type="fixed">
@@ -1321,6 +1348,12 @@
   <origin xyz="0.022787 -0.072291 0.0415" rpy="0 0 0"/>
   <parent link="right_base_case_link_1"/>
   <child link="right_skirt_sblue_case_link_1"/>
+</joint>
+
+<joint name="lidar_joint" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  <parent link="mdf_link_1"/>
+  <child link="rplidar"/>
 </joint>
 
 </robot>
