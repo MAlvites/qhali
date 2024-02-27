@@ -8,15 +8,15 @@
 <xacro:property name="black_color" value="Gazebo/Black" />
 
 <gazebo reference="base_link">
-  <material>${white_color}</material>
+  <material>${metal_color}</material>
 </gazebo>
 
 <gazebo reference="right_motor_link_1">
-  <material>${white_color}</material>
+  <material>${metal_color}</material>
 </gazebo>
 
 <gazebo reference="left_motor_link_1">
-  <material>${white_color}</material>
+  <material>${metal_color}</material>
 </gazebo>
 
 <gazebo reference="left_wheel_link_1">
@@ -24,19 +24,19 @@
 </gazebo>
 
 <gazebo reference="front_right_caster_link_1">
-  <material>${white_color}</material>
+  <material>${black_color}</material>
 </gazebo>
 
 <gazebo reference="front_left_caster_link_1">
-  <material>${white_color}</material>
+  <material>${black_color}</material>
 </gazebo>
 
 <gazebo reference="back_right_caster_link_1">
-  <material>${white_color}</material>
+  <material>${black_color}</material>
 </gazebo>
 
 <gazebo reference="back_left_caster_link_1">
-  <material>${white_color}</material>
+  <material>${black_color}</material>
 </gazebo>
 
 <gazebo reference="right_wheel_link_1">
@@ -44,7 +44,7 @@
 </gazebo>
 
 <gazebo reference="column_bars_link_1">
-  <material>${white_color}</material>
+  <material>${metal_color}</material>
 </gazebo>
 
 <gazebo reference="body_link_1">
@@ -52,11 +52,11 @@
 </gazebo>
 
 <gazebo reference="left_arm_first_motor_link_1">
-  <material>${white_color}</material>
+  <material>${black_color}</material>
 </gazebo>
 
 <gazebo reference="right_arm_first_motor_link_1">
-  <material>${white_color}</material>
+  <material>${black_color}</material>
 </gazebo>
 
 <gazebo reference="neck_base_link_1">
@@ -76,7 +76,7 @@
 </gazebo>
 
 <gazebo reference="left_arm_second_motor_link_1">
-  <material>${white_color}</material>
+  <material>${black_color}</material>
 </gazebo>
 
 <gazebo reference="left_armpit_link_1">
@@ -84,7 +84,7 @@
 </gazebo>
 
 <gazebo reference="left_arm_third_motor_link_1">
-  <material>${white_color}</material>
+  <material>${black_color}</material>
 </gazebo>
 
 <gazebo reference="left_upper_arm_link_1">
@@ -96,7 +96,7 @@
 </gazebo>
 
 <gazebo reference="right_arm_third_motor_link_1">
-  <material>${white_color}</material>
+  <material>${black_color}</material>
 </gazebo>
 
 <gazebo reference="right_upper_arm_link_1">
@@ -108,7 +108,7 @@
 </gazebo>
 
 <gazebo reference="right_arm_second_motor_link_1">
-  <material>${white_color}</material>
+  <material>${black_color}</material>
 </gazebo>
 
 <gazebo reference="right_armpit_link_1">
@@ -124,11 +124,11 @@
 </gazebo>
 
 <gazebo reference="left_arm_four_motor_link_1">
-  <material>${white_color}</material>
+  <material>${black_color}</material>
 </gazebo>
 
 <gazebo reference="right_arm_four_motor_link_1">
-  <material>${white_color}</material>
+  <material>${black_color}</material>
 </gazebo>
 
 <gazebo reference="front_case_base_link_1">
@@ -140,11 +140,11 @@
 </gazebo>
 
 <gazebo reference="left_case_base_link_1">
-  <material>${white_color}</material>
+  <material>${skyblue_color}</material>
 </gazebo>
 
 <gazebo reference="right_base_case_link_1">
-  <material>${white_color}</material>
+  <material>${skyblue_color}</material>
 </gazebo>
 
 <gazebo reference="cover_case_base_link_1">
@@ -156,7 +156,7 @@
 </gazebo>
 
 <gazebo reference="cover2_skirt_base_link_1">
-  <material>${white_color}</material>
+  <material>${skyblue_color}</material>
 </gazebo>
 
 <gazebo reference="cover_skirt_case_link_1">
@@ -164,15 +164,15 @@
 </gazebo>
 
 <gazebo reference="left_skirt_sblue_case_link_1">
-  <material>${white_color}</material>
+  <material>${skyblue_color}</material>
 </gazebo>
 
 <gazebo reference="right_blue_skirt_link_1">
-  <material>${white_color}</material>
+  <material>${blue_color}</material>
 </gazebo>
 
 <gazebo reference="left_blue_skirt_link_1">
-  <material>${white_color}</material>
+  <material>${blue_color}</material>
 </gazebo>
 
 <gazebo reference="white_trunk_case_link_1">
@@ -180,11 +180,11 @@
 </gazebo>
 
 <gazebo reference="blue_trunk_case_link_1">
-  <material>${white_color}</material>
+  <material>${blue_color}</material>
 </gazebo>
 
 <gazebo reference="sblue_trunk_case_link_1">
-  <material>${white_color}</material>
+  <material>${skyblue_color}</material>
 </gazebo>
 
 <gazebo reference="white2_trunk_case_link_1">
@@ -196,11 +196,11 @@
 </gazebo>
 
 <gazebo reference="front_screen_link_1">
-  <material>${white_color}</material>
+  <material>${black_color}</material>
 </gazebo>
 
 <gazebo reference="right_skirt_sblue_case_link_1">
-  <material>${white_color}</material>
+  <material>${skyblue_color}</material>
 </gazebo>
 
 <gazebo reference="rplidar">
