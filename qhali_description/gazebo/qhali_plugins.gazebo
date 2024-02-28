@@ -26,7 +26,7 @@
 
 <gazebo reference="rplidar">
     <sensor type="ray" name="rplidar_a3">
-      <pose>0 0 0 0 0 0</pose>
+      <pose>0 0 0.041 0 0 0</pose>
       <visualize>true</visualize>
       <update_rate>15</update_rate>
       <ray>
