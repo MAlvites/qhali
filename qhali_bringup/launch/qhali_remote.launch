@@ -1,10 +1,6 @@
 <launch>
-  <!--<arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>-->
-  <arg name="multi_robot_name" default=""/>
 
-  <include file="$(find qhali_bringup)/includes/description.launch.xml">
-    <arg name="model" value="$(arg model)" />
-  </include>
+  <include file="$(find qhali_bringup)/includes/description.launch.xml"/>
 
   <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
     <param name="publish_frequency" type="double" value="50.0" />

@@ -19,9 +19,7 @@
   <arg name="configuration_basename" default="qhali_lds_2d.lua"/>
 
   <!-- move_base -->
-  <include file="$(find qhali_navigation)/launch/move_base.launch">
-    <arg name="model" value="$(arg model)" />
-  </include>
+  <include file="$(find qhali_navigation)/launch/move_base.launch"/>
 
   <!-- cartographer_node -->
   <node pkg="cartographer_ros" type="cartographer_node" name="cartographer_node" 
