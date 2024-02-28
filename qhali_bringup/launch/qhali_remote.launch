@@ -2,7 +2,7 @@
   <!--<arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>-->
   <arg name="multi_robot_name" default=""/>
 
-  <include file="$(find qhali_bringup)/launch/includes/description.launch.xml">
+  <include file="$(find qhali_bringup)/includes/description.launch.xml">
     <arg name="model" value="$(arg model)" />
   </include>
 
