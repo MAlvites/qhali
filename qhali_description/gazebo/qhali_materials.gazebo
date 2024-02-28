@@ -203,7 +203,11 @@
   <material>${skyblue_color}</material>
 </gazebo>
 
-<gazebo reference="rplidar">
+<gazebo reference="rplidar_link">
+  <material>${black_color}</material>
+</gazebo>
+
+<gazebo reference="depth_camera_link">
   <material>${black_color}</material>
 </gazebo>
 

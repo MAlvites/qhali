@@ -300,7 +300,13 @@
   <selfCollide>true</selfCollide>
 </gazebo>
 
-<gazebo reference="rplidar">
+<gazebo reference="rplidar_link">
+  <mu1>${standard_friction}</mu1>
+  <mu2>${standard_friction}</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="depth_camera_link">
   <mu1>${standard_friction}</mu1>
   <mu2>${standard_friction}</mu2>
   <selfCollide>true</selfCollide>
