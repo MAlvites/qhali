@@ -1061,19 +1061,19 @@
 
 <link name="depth_camera_link">
   <inertial>
-    <origin xyz="0.0 0.0 0.0" rpy="0 1.57 0"/>
+    <origin xyz="-0.0085 0.0 0.0" rpy="0 1.57 0"/>
     <mass value="0.095"/>
     <inertia ixx="1e-5" iyy="1e-5" izz="1e-5" ixy="0" iyz="0" ixz="0"/>
   </inertial>
   <visual>
-    <origin xyz="0.0 0.0 0.0" rpy="0 1.57 0"/>
+    <origin xyz="-0.0085 0.0 0.0" rpy="0 1.57 0"/>
     <geometry>
       <cylinder length="0.026" radius="0.0305"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.0 0.0 0.0" rpy="0 1.57 0"/>
+    <origin xyz="-0.0085 0.0 0.0" rpy="0 1.57 0"/>
     <geometry>
       <cylinder length="0.026" radius="0.0305"/>
     </geometry>
