@@ -2,7 +2,7 @@
   <!-- Arguments -->
   <arg name="configuration_basename" default="qhali_lds_2d.lua"/>
   <arg name="odom_frame" default="odom"/>
-  <arg name="base_frame" default="base_footprint"/>
+  <arg name="base_frame" default="base_link"/>
   <arg name="scan_subscriber_queue_size" default="5"/>
   <arg name="scan_topic" default="scan"/>
   <arg name="map_size" default="2048"/>

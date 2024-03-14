@@ -4,7 +4,7 @@ raytrace_range: 3.5
 #footprint: [[-0.385, -0.385], [-0.385, 0.385], [0.385, 0.385], [0.385, -0.385]]
 robot_radius: 0.35
 
-inflation_radius: 1.0
+inflation_radius: 0.4
 cost_scaling_factor: 1.0
 
 map_type: costmap
