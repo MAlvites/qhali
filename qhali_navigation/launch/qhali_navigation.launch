@@ -1,6 +1,6 @@
 <launch>
   <!-- Arguments -->
-  <arg name="map_file" default="$(find qhali_navigation)/maps/map.yaml"/>
+  <arg name="map_file" default="$(find qhali_navigation)/maps/map_env1.yaml"/>
   <arg name="open_rviz" default="true"/>
   <arg name="move_forward_only" default="true"/>
 
