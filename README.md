@@ -1,4 +1,4 @@
-ROBOT QHALI
+# RobotQhali
 
 Para accionar el robot pueden usarse los siguiente comandos
 roslaunch qhali_bringup qhali_no_sensors.launch : es para operar los brazos y roboclaw, no la parte de navegaci[on aut[onoma
